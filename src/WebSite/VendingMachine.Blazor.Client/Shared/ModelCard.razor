@@ -1,0 +1,100 @@
+﻿@if (this.MoneyManagement != null)
+{
+    <div class="modal-card">
+        <div class="heading">
+            <span>
+                Purchase ScuuessFull
+            </span>
+        </div>
+        <ImageCardVeiwerComponent ImageData="@(this.MoneyManagement?.GetSelectedProduct()?.Product?.ProductImage?.ImageData)" ImageURL="@(this.MoneyManagement?.GetSelectedProduct()?.Product?.ProductImage?.ImageName)"/>
+
+        <div class="detail-holder ">
+
+            @if (this.MoneyManagement?.GetSelectedProduct() != null)
+            {
+                <div class="text-holder">
+                    <span class="title ">
+                        Product Name :
+                    </span>
+                    <span class="value ">
+                        @(this.MoneyManagement?.GetSelectedProduct()?.Product?.ProductName)
+                    </span>
+
+                </div>
+                <div class="product-Description ">
+                    <span class="title ">
+                        Product Description :
+                    </span>
+                    <span class="value ">
+                        @(this.MoneyManagement?.GetSelectedProduct()?.Product?.ProductDescription)
+                    </span>
+                </div>
+                <div class="text-holder">
+                    <span class="title ">
+                        Product Price :
+                    </span>
+                    <span class="value ">
+                        @($"R{this.MoneyManagement?.GetSelectedProduct()?.Product?.ProductPrice.ToString()}")
+                    </span>
+
+                </div>
+                <div class="text-holder">
+                    <span class="title ">
+                        Amount Received :
+                    </span>
+                    <span class="value ">
+                        @($"R{this.MoneyManagement?.GetCurrentinputAmount().ToString()}")
+                    </span>
+
+                </div>
+                <div class="text-holder">
+                    <span class="title ">
+                        Change Received :
+                    </span>
+                    <span class="value ">
+                        @($"R{this.MoneyManagement?.GetChangeAmount().ToString()}")
+                    </span>
+                </div>
+            }
+
+            <div class="coin-information ">
+                <span>
+                    Change Cion Information
+                </span>
+                <div class="coin-1 ">
+                    <div>
+                        <i class="icon-Coin "></i>
+                        <span>R1.00 :</span>
+                    </div>
+                    <span>
+                        @($"* {this.NumberOFOneRandCions} Coin(s)")
+                    </span>
+                </div>
+                <div class="coin-1 ">
+                    <div>
+                        <i class="icon-Coin "></i>
+                        <span>R2.00 :</span>
+                    </div>
+                    <span>
+                        @($"* {this.NumberOFTwoRandCions} Coin(s)")
+                    </span>
+                </div>
+                <div class="coin-1 ">
+                    <div>
+                        <i class="icon-Coin "></i>
+                        <span>R5.00 :</span>
+                    </div>
+                    <span>
+                        @($"* {this.NumberOFFiveRandCoins} Coin(s)")
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-information">
+            <a @onclick="@(() => this.TakeChange_OnClick())"> 
+                TAKE CHANGE PLEASE!
+            </a>
+        </div>
+    </div>
+}

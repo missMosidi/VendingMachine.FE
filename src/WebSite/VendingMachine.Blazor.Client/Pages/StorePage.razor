@@ -1,0 +1,66 @@
+﻿@page "/"
+@layout PageLayout
+
+<div class="center-container">
+    <div class="refresh-container">
+
+        <div class="coin-container">
+            <a @onclick="@(() => this.AddCion_OnClick(1.00m))">
+                <i class="icon-Coin"></i> R1.00
+            </a>
+            <a @onclick="@(() => this.AddCion_OnClick(2.00m))">
+                <i class="icon-Coin"></i> R2.00
+            </a>
+            <a @onclick="@(() => this.AddCion_OnClick(5.00m))">
+                <i class="icon-Coin"></i> R5.00
+            </a>
+
+            <div class="text-holder">
+                <div class="current-money">
+                    <span class="title">
+                        Current Input Amount :
+                    </span>
+                    <span class="value">
+                        @($"R{this.MoneyManagement.GetCurrentinputAmount()}")
+                    </span>
+                </div>
+                <div class="change-amount">
+                    <span class="title">
+                        Change Amount :
+                    </span>
+                    <span class="value">
+                        @($"R{this.MoneyManagement.GetChangeAmount()}")
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        @if (this.ShowError)
+        {
+            <div class="error-display">
+                <span>
+                    Please Input enough Money to buy the product
+                </span>
+            </div>
+        }
+
+        <a @onclick="@( async () => await this.Refresh_OnClick())" class="refresh">
+            <i class="icon-Refresh"></i>
+        </a>
+    </div>
+    <div class="product-container">
+        
+        @if(this.StockInventoryDtos != null)
+        {
+            foreach(var x in this.StockInventoryDtos)
+            {
+                <ProductCard Data="@(x)" OnClick="@(this.Buy_OnClick)"/>
+            }
+        }
+        else
+        {
+            @("Loading...")
+        }
+
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿<div class="cards-items">
+    @if (this.Data != null)
+    {
+        <ImageCardVeiwerComponent ImageData="@(this.Data.Product.ProductImage.ImageData)" ImageALT="@(this.Data.Product.ProductImage.ImageName)" />
+        <div class="product-name-header">
+            <span>
+                @(this.Data.Product.ProductName)
+            </span>
+
+        </div>
+        <div class="product-prices">
+            <span>
+                @($"R{this.Data.Product.ProductPrice.ToString()}")
+            </span>
+        </div>
+        <div class="item-left">
+            @if (this.Data.TotalItems > 0 && !this.Data.IsOutOfStock)
+            {
+                <span>
+                    @($"{this.Data.TotalItems} Left")
+                </span>
+            }
+            else
+            {
+                <span>
+                    @("Out Of Stock!")
+                </span>
+            }
+        </div>
+
+        <div class="button-holder">
+            @if (this.Data.TotalItems > 0 && !this.Data.IsOutOfStock)
+            {
+                <a @onclick="@(() => this.OnBuy_Click())" class="buy-button">
+                    <span>
+                        Buy
+                    </span>
+                </a>
+            }
+        </div>
+    }
+    else
+    {
+        @("No Data")
+    }
+</div>

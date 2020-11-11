@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'vendingMachine';
+  src:  url('fonts/vendingMachine.eot?bs4igf');
+  src:  url('fonts/vendingMachine.eot?bs4igf#iefix') format('embedded-opentype'),
+    url('fonts/vendingMachine.ttf?bs4igf') format('truetype'),
+    url('fonts/vendingMachine.woff?bs4igf') format('woff'),
+    url('fonts/vendingMachine.svg?bs4igf#vendingMachine') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vendingMachine' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Coin:before {
+  content: "\e900";
+}
+.icon-Product:before {
+  content: "\e901";
+}
+.icon-Refresh:before {
+  content: "\e902";
+}
+.icon-Sales:before {
+  content: "\e903";
+}
+.icon-StockInventory:before {
+  content: "\e904";
+}
+.icon-Store:before {
+  content: "\e905";
+}

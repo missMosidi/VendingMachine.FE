@@ -1,0 +1,33 @@
+﻿
+@if (!String.IsNullOrEmpty(this.ImageURL) && this.ImageData == null && String.IsNullOrEmpty(this.ImageBase64Data))
+{
+    <img src="@(this.ImageURL)" alt="@(this.ImageALT)">
+}
+else if (String.IsNullOrEmpty(this.ImageURL) && this.ImageData != null && String.IsNullOrEmpty(this.ImageBase64Data))
+{
+
+    string temp = Convert.ToBase64String(this.ImageData).ToString();
+
+
+    <img src="@($"data:image/png;base64, {temp}")" alt="@(this.ImageALT)">
+}
+
+else if (String.IsNullOrEmpty(this.ImageURL) && this.ImageData == null && !String.IsNullOrEmpty(this.ImageBase64Data))
+{
+    <img src="@($"data:image/png;base64, {this.ImageBase64Data}")" alt="@(this.ImageALT)">
+}
+else if (this.ImageData != null)
+{
+    string temp = Convert.ToBase64String(this.ImageData).ToString();
+
+
+    <img src="@($"data:image/png;base64, {temp}")" alt="@(this.ImageALT)">
+}
+else if (!String.IsNullOrEmpty(this.ImageBase64Data))
+{
+    <img src="@($"data:image/png;base64, {this.ImageBase64Data}")" alt="@(this.ImageALT)">
+}
+else if (!String.IsNullOrEmpty(this.ImageURL))
+{
+    <img src="@(this.ImageURL)" alt="@(this.ImageALT)">
+}

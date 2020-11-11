@@ -1,0 +1,695 @@
+@import "../MainStyle.css";
+.container>.top-bar {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1A2128;
+}
+
+.container>.top-bar>.icon-holder {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.container>.top-bar>.icon-holder>img {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container>.top-bar>hr {
+    align-self: center;
+    margin-right: 80px;
+    height: 45px;
+}
+
+.container>.top-bar>.heading-holder {
+    align-self: center;
+    margin-left: 25px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.top-bar>.heading-holder>h1 {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: var(--primary-light-color);
+    margin-right: 15px;
+}
+
+.container>.top-bar>.heading-holder>span {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--primary-light-color);
+    margin-right: 15px;
+}
+
+.container>.top-bar>.heading-holder>h3 {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--primary-light-color);
+    margin-right: 4px;
+}
+
+.container>.top-bar>.user-profile-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.container>.top-bar>.user-profile-holder>.profile-picture-holder {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    margin-right: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.top-bar>.user-profile-holder>.profile-picture-holder>img {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container>.top-bar>.user-profile-holder>.profile-picture-holder>i {
+    align-self: center;
+    font-size: 2.5rem;
+    color: gray;
+}
+
+.container>.top-bar>.user-profile-holder>span {
+    align-self: center;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-right: 50px;
+}
+
+.container>.top-bar>.user-profile-holder>.drop-down-menu {
+    align-self: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.top-bar>.user-profile-holder>.drop-down-menu>i {
+    align-self: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.container>.center-container {
+    align-self: flex-start;
+    width: 100%;
+    height: 93.9vh;
+    background-color: #DBE1E3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/**/
+
+.container>.center-container>.left-panel {
+    align-self: flex-start;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.left-panel-reduced {
+    width: 110px;
+}
+
+.container>.center-container>.left-panel-reduced>.reduced {
+    width: 100%;
+}
+
+.container>.center-container>.left-panel-full {
+    width: 290px;
+}
+
+.container>.center-container>.left-panel>.left-section {
+    align-self: flex-start;
+    height: 100%;
+    background-color: #B71818;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section {
+    align-self: flex-start;
+    width: 95%;
+    height: 94%;
+    background-color: #073847;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.reducer-holder {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #042C35;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.reducer-holder>a {
+    align-self: center;
+    font-size: 1.3rem;
+    color: white;
+    transition: all 1.5s;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav {
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li {
+    align-self: flex-start;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav {
+    margin-top: 25px;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>a,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>a {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>a>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>a>i {
+    align-self: center;
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 1.7rem;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>a>span,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>a>span {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>.active>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>.active>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>.active>span,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>.active>span {
+    color: #B71818;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>.not-active>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>.not-active>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>.not-active>span,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>.not-active>span {
+    color: white;
+    transition: all 0.5s;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>.not-active:hover>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>.not-active:hover>i,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.main-nav>li>.not-active:hover>span,
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>.notification-nav>li>.not-active:hover>span {
+    color: #B71818;
+}
+
+.container>.center-container>.left-panel>.left-section>.top-section>.nav-bar>hr {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.container>.center-container>.left-panel>.left-section>.bottom-button {
+    align-items: flex-start;
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.left-section>.bottom-button>a {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #042C35;
+}
+
+.container>.center-container>.left-panel>.left-section>.bottom-button>a>span {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: white;
+    margin-right: 10px;
+}
+
+.container>.center-container>.left-panel>.left-section>.bottom-button>a>i {
+    align-self: center;
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+/**/
+
+.container>.center-container>.left-panel>.full {
+    width: 100%;
+}
+
+
+/*right-section reduced*/
+
+.container>.center-container>.left-panel-full>.reduced {
+    width: 30%;
+}
+
+.container>.center-container>.left-panel>.reduced>.top-section>.reducer-holder>a {
+    transform: rotate(180deg);
+}
+
+.container>.center-container>.left-panel>.reduced>.top-section>.nav-bar>.main-nav>li>a>span,
+.container>.center-container>.left-panel>.reduced>.top-section>.nav-bar>.notification-nav>li>a>span {
+    display: none;
+}
+
+.container>.center-container>.left-panel>.reduced>.bottom-button>a>span {
+    display: none;
+}
+
+
+/**/
+
+.container>.center-container>.left-panel>.show {
+    display: flex;
+}
+
+.container>.center-container>.left-panel>.hide {
+    display: none;
+}
+
+.container>.center-container>.left-panel>.right-section {
+    align-self: flex-start;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.left-panel>.right-section>.close-holder {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.right-section>.close-holder>a {
+    align-self: center;
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container>.center-container>.left-panel>.right-section>.content-card {
+    align-self: flex-start;
+    width: 100%;
+    height: 95.9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.left-panel>.right-section>.content-card>ul {
+    align-self: flex-start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.right-section>.content-card>ul>li {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.right-section>.content-card>ul>li>a {
+    align-self: center;
+    width: 90%;
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.center-container>.left-panel>.right-section>.content-card>ul>li>.active {
+    background-color: #B71818;
+}
+
+.container>.center-container>.left-panel>.right-section>.content-card>ul>li>.not-active {
+    background-color: rgb(126, 125, 125);
+}
+
+
+/**/
+
+.container>.center-container>.right-panel {
+    align-self: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBE1E3;
+}
+
+.container>.center-container>.right-panel-full {
+    width: 94.5%;
+}
+
+.container>.center-container>.right-panel-reduced {
+    width: 84.9%;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container {
+    align-self: center;
+    width: 98%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.top-section-card {
+    align-self: center;
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 2px 2px 5px black;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.top-section-card>.top-bar {
+    align-self: flex-start;
+    width: 100%;
+    height: 50px;
+    background-color: #073847;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.top-section-card>.top-bar>.left-section {
+    align-self: center;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.top-section-card>.top-bar>.left-section>i {
+    align-self: center;
+    margin-left: 25px;
+    font-size: 2rem;
+    margin-right: 25px;
+    color: white;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.top-section-card>.top-bar>.left-section>span {
+    align-self: center;
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: white;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.top-section-card>.content-card {
+    align-self: flex-start;
+    width: 100%;
+    height: 87.5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card {
+    align-self: center;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 2px 2px 5px black;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar {
+    align-self: flex-start;
+    width: 100%;
+    height: 50px;
+    background-color: #B71818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.left-section {
+    align-self: center;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.left-section>i {
+    align-self: center;
+    margin-left: 25px;
+    font-size: 2rem;
+    margin-right: 25px;
+    color: white;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.left-section>span {
+    align-self: center;
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: white;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section {
+    align-self: center;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section>span {
+    align-self: center;
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: white;
+    margin-right: 20px;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section>a {
+    align-self: center;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: all 1s;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section>.active {
+    color: #073847;
+    transform: rotate(180deg);
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section>.not-active {
+    color: white;
+    transform: rotate(0deg);
+    transition: all 1s;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section>.not-active:hover {
+    color: #073847;
+    transform: rotate(-180deg);
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.bottom-section-card>.top-bar>.right-section>.active:hover {
+    color: white;
+    transform: rotate(0deg);
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card {
+    align-self: flex-start;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card>ul {
+    align-self: flex-start;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card>ul>li {
+    align-self: flex-start;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card>ul>li>a {
+    align-self: center;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: white;
+    transition: all 0.5s;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card>ul>li>.active {
+    background-color: #B71818;
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card>ul>li>.not-active {
+    background-color: rgb(126, 125, 125);
+}
+
+.container>.center-container>.right-panel>.extranet-center-container>.inner-nav-card>ul>li>.not-active:hover {
+    background-color: #B71818;
+}

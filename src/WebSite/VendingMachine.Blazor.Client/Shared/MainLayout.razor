@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+
+<div class="container">
+
+    @if (this.MoneyManagement?.GetShowModal() ?? this.MoneyManagement.GetShowModal())
+    {
+        <div class="modal-container">
+            <ModelCard />
+        </div>
+    }
+    <div class="top-bar">
+        <div class="heading-holder">
+            <h1>
+                Vending Machine
+            </h1>
+            <span>
+                -
+            </span>
+            <h3>
+                Store
+            </h3>
+        </div>
+    </div>
+
+    @Body
+</div>

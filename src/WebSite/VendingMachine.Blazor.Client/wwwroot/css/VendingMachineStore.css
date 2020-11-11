@@ -1,0 +1,553 @@
+@import "../MainStyle.css";
+.container>.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(41, 38, 38, 0.699);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+}
+
+.container>.modal-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px transition;
+    background-color: transparent;
+}
+
+.container>.modal-container::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.container>.modal-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+.container>.modal-container>.modal-card {
+    align-self: center;
+    width: 50%;
+    min-height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    padding: 5px 35px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.modal-container>.modal-card>.heading {
+    align-self: flex-start;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.modal-container>.modal-card>.heading>span {
+    align-self: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.container>.modal-container>.modal-card>img {
+    align-self: center;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.container>.modal-container>.modal-card>.detail-holder {
+    align-self: flex-start;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.text-holder {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.text-holder>.title {
+    align-self: flex-start;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.text-holder>.value {
+    align-self: flex-start;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: black;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.product-Description {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.product-Description>.title {
+    align-self: flex-start;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.product-Description>.value {
+    align-self: flex-start;
+    max-height: 100px;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.product-Description>.value::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px transition;
+    background-color: transparent;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.product-Description>.value::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.product-Description>.value::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.coin-information {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.coin-information>span {
+    align-self: flex-start;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.coin-information>.coin-1 {
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.coin-information>.coin-1>div {
+    align-self: flex-start;
+    margin-right: 15px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.coin-information>.coin-1>div>i {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.coin-information>.coin-1>span {
+    align-self: flex-start;
+    font-size: 1rem;
+    color: black;
+}
+
+.container>.modal-container>.modal-card>.detail-holder>.status-holder {
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.modal-container>.modal-card>.button-information {
+    align-self: flex-end;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.container>.modal-container>.modal-card>.button-information>a {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    transition: all 2s;
+}
+
+.container>.modal-container>.modal-card>.button-information>a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/**/
+
+.container>.center-container>.right-panel>.center-container {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container {
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container {
+    align-self: flex-start;
+    margin-left: 25px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>a {
+    align-self: center;
+    background-color: var(--secondary-color);
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: white;
+    transition: all 1.5s;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>a:hover>i {
+    color: black;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>a>i {
+    align-self: center;
+    margin-right: 5px;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 1.5s;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder {
+    align-self: center;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder>.current-money {
+    align-self: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder>.current-money>.title {
+    align-self: center;
+    color: black;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder>.current-money>.value {
+    align-self: center;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder>.change-amount {
+    align-self: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder>.change-amount>.title {
+    align-self: center;
+    color: black;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.coin-container>.text-holder>.change-amount>.value {
+    align-self: center;
+    color: rgb(12, 59, 12);
+    font-size: 1.4rem;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.error-display {
+    align-self: flex-start;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.error-display>span {
+    align-self: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: red;
+}
+
+
+/**/
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.refresh {
+    align-self: center;
+    width: auto;
+    height: auto;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s;
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.refresh:hover {
+    transform: rotate(180deg);
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.refresh:hover>i {
+    color: var(--secondary-color);
+}
+
+.container>.center-container>.right-panel>.center-container>.refresh-container>.refresh>i {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+
+/**/
+
+.container>.center-container>.right-panel>.center-container>.product-container {
+    align-self: flex-start;
+    width: 100%;
+    height: 93%;
+    padding: 10px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 21%);
+    grid-template-rows: max-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px transition;
+    background-color: transparent;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items {
+    width: 100%;
+    height: 370spx;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px black;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>img {
+    align-self: flex-start;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.product-name-header {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.product-name-header>span {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.product-prices {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.product-prices>span {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: darkgreen;
+    font-weight: normal;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.item-left {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.item-left>span {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: red;
+    font-weight: lighter;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.button-holder {
+    align-self: flex-start;
+    width: 90%;
+    margin-left: 20px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.button-holder>a {
+    align-self: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.button-holder>a>span {
+    align-self: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.container>.center-container>.right-panel>.center-container>.product-container>.cards-items>.button-holder>a:hover {
+    background-color: var(--secondary-color);
+}
